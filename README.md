@@ -1,4 +1,5 @@
 # fake-open-ai-server
+**[Sincromisor/fake-openai-server](https://github.com/Sincromisor/fake-openai-server)をBASE64対応にしたものです。**
 
 OpenAI API互換のText embeddingsサーバーと、
 Rerankサーバーをローカルで提供します。
