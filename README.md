@@ -69,7 +69,7 @@ $ curl -v http://127.0.0.1:8081/v1/embeddings -H 'Content-Type: application/json
     "input": [
         "文章: てきとうなテキストだよ。",
         "文章: てきとうなテキストです。"
-    ]
+  ]
 }'
 ```
 
@@ -109,6 +109,16 @@ $ curl -v http://127.0.0.1:8081/v1/embeddings -H 'Content-Type: application/json
     "prompt_tokens": 0,
     "total_tokens": 0
   }
+}
+```
+
+`encoding_format`を`"base64"`に指定すると、OpenAI互換のBase64文字列として埋め込みが返ります（既定値は`"float"`）。
+
+```json
+{
+  "model": "cl-nagoya/ruri-large",
+  "input": "Base64を返してほしいテキスト",
+  "encoding_format": "base64"
 }
 ```
 
